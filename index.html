@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My first three.js app</title>
-    <style>
-      body { margin: 0; }
-    </style>
-  </head>
-  <body>
-    <script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.175.0/examples/jsm/",
-    "lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.19/+esm"
-  }
-}
-</script>
+<head>
+  <meta charset="utf-8" />
+  <title>3D Model Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>html,body{height:100%}body{margin:0;background:#f0f0f0;}</style>
 
-  </body>
+  <!-- Import Map：要在任何 module 之前，并且正确闭合 -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.175.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.175.0/examples/jsm/",
+      "lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.19/+esm"
+    }
+  }
+  </script>
+</head>
+<body>
+  <script type="module" src="src/main.js"></script>
+</body>
 </html>
